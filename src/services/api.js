@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const api = axios.create({
-    baseURL: 'https://gb-mock-api.hml.ecomm.grupoboticario.digital',
+    baseURL: `${process.env.BOTICARIO_API_URL}`,
     headers: { 'Authorization': 'Bearer teste-123456789' }
 });
 
